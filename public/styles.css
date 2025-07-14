@@ -69,5 +69,5 @@ body, html {
   transition: transform 0.2s ease;
 }
 .feature.col:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
