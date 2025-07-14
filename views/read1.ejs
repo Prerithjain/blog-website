@@ -1,55 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" href="/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<div class="blog-content-container">
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <p><%= blog.blogname %></p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      by - <cite title="Source Title"><%= blog.authname %></cite>
+    </figcaption>
+  </figure>
 
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <title>read blog</title>
-    <link href="/styles.css" rel="stylesheet">
-</head>
-
-<body>
-    <%- include("partials/header.ejs") %>
-    <div class=blog-content-container>
-        <figure class="text-center">
-            <blockquote class="blockquote">
-                <p>Embracing Minimalism in Everyday Life</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                by - <cite title="Source Title">Jane Mitchell</cite>
-            </figcaption>
-        </figure>
-
-        
-        <div class="innercont text-center mt-4">
-            <p>Minimalism isn’t just about having a clean desk or a tidy wardrobe — it’s a way of thinking. In today’s
-                fast-paced, consumer-driven world, many of us find ourselves overwhelmed with clutter — both physical
-                and mental.
-
-                I started embracing minimalism three years ago. At first, it began with decluttering my home — donating
-                clothes I hadn't worn in years, tossing out expired products, and reducing the furniture in my living
-                room. But it quickly became something deeper.
-
-                Digital clutter was the next big step. I deleted hundreds of unnecessary photos from my phone, organized
-                my files, unsubscribed from promotional emails, and began limiting my screen time.
-
-                But perhaps the most powerful aspect of minimalism is its mental impact. By prioritizing what truly
-                matters, I’ve reduced decision fatigue, found more mental clarity, and have more time to spend on
-                meaningful experiences.
-
-                If you're starting out, begin small. Try decluttering just one drawer or going one day without social
-                media. Minimalism is a journey — one that doesn’t mean owning nothing, but rather owning only what adds
-                value.
-
-                Live with less, and you’ll experience more.</p>
-        </div>
+  <div class="innercont text-center mt-4">
+    <p><%= blog.content %></p>
+  </div>
 </div>
 
-</body>
-
-</html>

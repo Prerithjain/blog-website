@@ -57,9 +57,17 @@ body, html {
   color: #333;
   text-align: justify;
 }
-
-
-
 .reading{
     padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.feature.col {
+  background-color: #ffffff; /* light gray background */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+.feature.col:hover {
+  transform: translateY(-5px);
 }
