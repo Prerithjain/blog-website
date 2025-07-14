@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+<link rel="stylesheet" href="/styles.css">
+
+
+<form action="/create" method="POST">
+  <div class="create">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Author name</label>
+      <input type="text" name="Authorname" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Blog name</label>
+      <input type="text" name="Blogname" class="form-control" id="exampleFormControlInput1" >
+    </div>
+    
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Your Blog Content</label>
+      <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="4"></textarea>
+    </div>
+
+    
+    <div class="d-grid">
+      <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+  </div>
+</form>
