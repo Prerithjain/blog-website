@@ -6,10 +6,11 @@
 <div class="blog-content-container">
   <figure class="text-center">
     <blockquote class="blockquote">
-      <p><%= blog.blogname %></p>
+      <h2><%= blog.blogname %></h2>
     </blockquote>
     <figcaption class="blockquote-footer">
-      by - <cite title="Source Title"><%= blog.authname %></cite>
+      <cite title="Source Title"><p><strong>By <%= blog.authname %></strong></p></cite>
+      <small>Posted on: <%= new Date(blog.date).toLocaleString() %></small>
     </figcaption>
   </figure>
 
